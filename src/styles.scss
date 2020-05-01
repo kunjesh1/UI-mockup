@@ -1,1 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./styles/grid.scss";
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.mat-header-cell {
+  text-align: center;
+}
+
+.mat-card {
+  padding: 15px !important;
+  transition: none !important;
+  box-shadow: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  font-family: "Open Sans ", sans-serif;
+}
+
+.material-icons {
+  &.big-icon {
+    font-size: 8em;
+  }
+  &.faded {
+    opacity: 0.7;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.data-centered {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.selected {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.dismiss {
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+
+.mat-drawer-inner-container {
+  overflow-x: hidden !important;
+  margin-right: 2em !important;
+}
+
+@media only screen and (min-width: 40%) {
+  .mat-drawer-inner-container {
+    overflow-x: auto !important;
+  }
+}
+
+.mat-drawer-content {
+  overflow: hidden !important;
+}
+
+.learning-unit .mat-form-field-infix {
+  width: 450px !important;
+  word-wrap: break-word;
+  word-break: normal;
+  padding: 0;
+  border-top: 0;
+}
+
+.learning-unit .mat-form-field-wrapper {
+  padding-bottom: 0.9rem;
+}
+
+.red-snackbar {
+  background-color: #ff6666;
+}

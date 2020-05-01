@@ -1,0 +1,26 @@
+.card {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0vh 0vh 14vw -2vh rgba(75, 103, 240, 0.31);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin: 1%;
+  padding: 3%;
+}
+
+.card-grouping {
+  display: flex;
+}
+
+.card-image {
+  width: 4em;
+  height: 4em;
+}
+span {
+  font-weight: 700;
+  text-align: center;
+  font-size: medium;
+  padding: 10px;
+}
