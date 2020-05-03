@@ -1,0 +1,126 @@
+<div class="wrapper">
+
+    <h2 style="text-align: center">APIs</h2>
+    <!-- <div class="container">
+    
+        <ul class="resp-tabs-list">
+  
+            <li *ngFor="let item of content;let i=index;" [ngClass]="{'resp-tab-active':selected==i}" (click)="showRespectiveContent(i)" class="resp-tab-item" aria-controls="tab_item-0" role="tab">
+               {{item.title}}</li>
+           
+        </ul> -->
+
+    <!-- <div style="justify-content: center;align-items: center;">
+        <figure>
+            <img style="width:25em" src="../../../assets/images/chatbotillustration.jpg">
+           
+        </figure>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s,
+        </p>
+    </div> -->
+    <!-- 
+    <div style="justify-content: center;align-items: center;">
+        <figure>
+            <img style="width:25em" src="../../../assets/images/dashboard.svg">
+           
+        </figure>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s,
+        </p>
+    </div> -->
+
+
+
+
+
+    <!-- </div> -->
+    <div style="display: flex;justify-content: center;padding:1%;">
+        <a *ngFor="let item of content;let i=index;" class="tab__menu__item" [ngClass]="{'active':selected==i}"
+            (click)="showRespectiveContent(i)">{{item.title}}</a>
+    </div>
+    <div style="display:flex;flex-direction: column;justify-content: center;align-items: center;  margin:3%;  min-width: 52em;
+">
+        <figure *ngIf="!toggle;else showAPI">
+            <figcaption>
+                <div style="display:flex;justify-content: space-between;">
+                    <h2>{{currentContent.title}}</h2>
+                    <button class="api-button" (click)="toggleAPI()">Try Out API</button>
+                </div>
+                <p>{{currentContent.content}}
+                </p>
+            </figcaption>
+            <img style="width:17em" [src]="currentContent.img">
+
+
+        </figure>
+        <ng-template #showAPI>
+            <div class="card">
+                <div>
+                    <span class="material-icons" style="color:#4169e1" (click)="toggleAPI()">
+                        keyboard_backspace
+                        </span>
+                    <div>
+                    <h2 style="text-align: center;">{{currentContent.title}}</h2>
+                    <h4>Use one of our sample questions below or ask your own.</h4>
+                </div>
+                    <!-- <div class="dropdown">
+                        <select class="dropdown-select">
+                            <option value="What is the area of California?">What is the area of California?</option>
+                            <option value="How tall is Michael Jordan?">How tall is Michael Jordan?</option>
+                            <option value="What is the Empire State Building made of?">What is the Empire State Building
+                                made of?</option>
+                            <option value="What is the boiling point of water?">What is the boiling point of water?</option>
+                            <option value="Who directed Shawshank Redemption, Good Will Hunting, and Dead Poets Society?">
+                                Who directed Shawshank Redemption, Good Will Hunting, and Dead Poets Society?</option>
+                            <option value="When was Abraham Lincoln born and when was Thomas Jefferson president?">When was
+                                Abraham Lincoln born and when was Thomas Jefferson president?</option>
+                            <option value="Who wrote Hamlet and who is the author of War and Peace?">Who wrote Hamlet and
+                                who is the author of War and Peace?</option>
+                            <option value="When was Google founded and where was Apple founded?">When was Google founded and
+                                where was Apple founded?</option>
+                            <option value="Who is the mayor of the capital of California?">Who is the mayor of the capital
+                                of California?</option>
+                            <option value="Who is Arya Stark's father's wife?">Who is Arya Stark's father's wife?</option>
+                            <option value="Mark Zuckerberg's wife's birthday">Mark Zuckerberg's wife's birthday</option>
+                            <option value="How old is the President?">How old is the President?</option>
+                            <option value="">Custom</option>
+                        </select>
+                        <div class="select__arrow"></div>
+                      </div> -->
+                      <div class="select">
+                        <select name="format" id="format">
+                            <option value="What is the area of California?">What is the area of California?</option>
+                            <option value="How tall is Michael Jordan?">How tall is Michael Jordan?</option>
+                            <option value="What is the Empire State Building made of?">What is the Empire State Building
+                                made of?</option>
+                            <option value="What is the boiling point of water?">What is the boiling point of water?</option>
+                            <option value="Who directed Shawshank Redemption, Good Will Hunting, and Dead Poets Society?">
+                                Who directed Shawshank Redemption, Good Will Hunting, and Dead Poets Society?</option>
+                            <option value="When was Abraham Lincoln born and when was Thomas Jefferson president?">When was
+                                Abraham Lincoln born and when was Thomas Jefferson president?</option>
+                            <option value="Who wrote Hamlet and who is the author of War and Peace?">Who wrote Hamlet and
+                                who is the author of War and Peace?</option>
+                            <option value="When was Google founded and where was Apple founded?">When was Google founded and
+                                where was Apple founded?</option>
+                            <option value="Who is the mayor of the capital of California?">Who is the mayor of the capital
+                                of California?</option>
+                            <option value="Who is Arya Stark's father's wife?">Who is Arya Stark's father's wife?</option>
+                            <option value="Mark Zuckerberg's wife's birthday">Mark Zuckerberg's wife's birthday</option>
+                            <option value="How old is the President?">How old is the President?</option>
+                            <option value="">Custom</option>
+                        </select>
+
+                        
+                     </div>
+                     <textarea id="api-demo-sapien-textarea" placeholder="Paste your text here..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">Toy Story is a 1995 American computer-animated buddy comedy adventure film produced by Pixar Animation Studios and released by Walt Disney Pictures. The directorial debut of John Lasseter, Toy Story was the first feature-length computer-animated film and the first theatrical film produced by Pixar. The screenplay was written by Joss Whedon, Andrew Stanton, Joel Cohen, and Alec Sokolow, based on a story by Lasseter, Pete Docter, Stanton and Joe Ranft. The film features music by Randy Newman, and was executive produced by Steve Jobs and Edwin Catmull.</textarea>
+                     <button class="api-button" style="float:right;margin-left: -95px;display: flex;font-size:">RUN&nbsp;<span class="material-icons" style="color:#4169e1;margin-top: -4px;">
+                        play_circle_filled
+                        </span>
+                        
+                        </button>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</div>

@@ -8,6 +8,7 @@
 
 .mainheader {
   display: flex;
+  align-content: flex-end;
   justify-content: space-between;
 }
 .mainheader .logo {
@@ -121,3 +122,10 @@ a {
   background: #fff;
   margin: 3%;
 }
+
+
+footer{
+  
+  
+      background-color: #4169e1;
+  }
