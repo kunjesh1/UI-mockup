@@ -10,6 +10,7 @@
   display: flex;
   align-content: flex-end;
   justify-content: space-between;
+  width: 100%;
 }
 .mainheader .logo {
   width: 250px;
@@ -123,9 +124,6 @@ a {
   margin: 3%;
 }
 
-
-footer{
-  
-  
-      background-color: #4169e1;
-  }
+footer {
+  background-color: #4169e1;
+}

@@ -59,11 +59,11 @@
                 <div>
                     <span class="material-icons" style="color:#4169e1" (click)="toggleAPI()">
                         keyboard_backspace
-                        </span>
+                    </span>
                     <div>
-                    <h2 style="text-align: center;">{{currentContent.title}}</h2>
-                    <h4>Use one of our sample questions below or ask your own.</h4>
-                </div>
+                        <h2 style="text-align: center;">{{currentContent.title}}</h2>
+                        <h4>Use one of our sample questions below or ask your own.</h4>
+                    </div>
                     <!-- <div class="dropdown">
                         <select class="dropdown-select">
                             <option value="What is the area of California?">What is the area of California?</option>
@@ -88,37 +88,47 @@
                         </select>
                         <div class="select__arrow"></div>
                       </div> -->
-                      <div class="select">
+                    <div class="select">
                         <select name="format" id="format">
                             <option value="What is the area of California?">What is the area of California?</option>
                             <option value="How tall is Michael Jordan?">How tall is Michael Jordan?</option>
                             <option value="What is the Empire State Building made of?">What is the Empire State Building
                                 made of?</option>
-                            <option value="What is the boiling point of water?">What is the boiling point of water?</option>
-                            <option value="Who directed Shawshank Redemption, Good Will Hunting, and Dead Poets Society?">
+                            <option value="What is the boiling point of water?">What is the boiling point of water?
+                            </option>
+                            <option
+                                value="Who directed Shawshank Redemption, Good Will Hunting, and Dead Poets Society?">
                                 Who directed Shawshank Redemption, Good Will Hunting, and Dead Poets Society?</option>
-                            <option value="When was Abraham Lincoln born and when was Thomas Jefferson president?">When was
+                            <option value="When was Abraham Lincoln born and when was Thomas Jefferson president?">When
+                                was
                                 Abraham Lincoln born and when was Thomas Jefferson president?</option>
-                            <option value="Who wrote Hamlet and who is the author of War and Peace?">Who wrote Hamlet and
+                            <option value="Who wrote Hamlet and who is the author of War and Peace?">Who wrote Hamlet
+                                and
                                 who is the author of War and Peace?</option>
-                            <option value="When was Google founded and where was Apple founded?">When was Google founded and
+                            <option value="When was Google founded and where was Apple founded?">When was Google founded
+                                and
                                 where was Apple founded?</option>
-                            <option value="Who is the mayor of the capital of California?">Who is the mayor of the capital
+                            <option value="Who is the mayor of the capital of California?">Who is the mayor of the
+                                capital
                                 of California?</option>
-                            <option value="Who is Arya Stark's father's wife?">Who is Arya Stark's father's wife?</option>
+                            <option value="Who is Arya Stark's father's wife?">Who is Arya Stark's father's wife?
+                            </option>
                             <option value="Mark Zuckerberg's wife's birthday">Mark Zuckerberg's wife's birthday</option>
                             <option value="How old is the President?">How old is the President?</option>
                             <option value="">Custom</option>
                         </select>
 
-                        
-                     </div>
-                     <textarea id="api-demo-sapien-textarea" placeholder="Paste your text here..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">Toy Story is a 1995 American computer-animated buddy comedy adventure film produced by Pixar Animation Studios and released by Walt Disney Pictures. The directorial debut of John Lasseter, Toy Story was the first feature-length computer-animated film and the first theatrical film produced by Pixar. The screenplay was written by Joss Whedon, Andrew Stanton, Joel Cohen, and Alec Sokolow, based on a story by Lasseter, Pete Docter, Stanton and Joe Ranft. The film features music by Randy Newman, and was executive produced by Steve Jobs and Edwin Catmull.</textarea>
-                     <button class="api-button" style="float:right;margin-left: -95px;display: flex;font-size:">RUN&nbsp;<span class="material-icons" style="color:#4169e1;margin-top: -4px;">
-                        play_circle_filled
+
+                    </div>
+                    <textarea id="api-demo-sapien-textarea" placeholder="Paste your text here..." autocomplete="off"
+                        autocorrect="off" autocapitalize="off"
+                        spellcheck="false">Toy Story is a 1995 American computer-animated buddy comedy adventure film produced by Pixar Animation Studios and released by Walt Disney Pictures. The directorial debut of John Lasseter, Toy Story was the first feature-length computer-animated film and the first theatrical film produced by Pixar. The screenplay was written by Joss Whedon, Andrew Stanton, Joel Cohen, and Alec Sokolow, based on a story by Lasseter, Pete Docter, Stanton and Joe Ranft. The film features music by Randy Newman, and was executive produced by Steve Jobs and Edwin Catmull.</textarea>
+                    <button class="api-button" style="float:right;margin-left:-57px;display: flex;">RUN&nbsp;<span
+                            class="material-icons" style="color:#4169e1;margin-top: -4px;">
+                            play_circle_filled
                         </span>
-                        
-                        </button>
+
+                    </button>
                 </div>
             </div>
         </ng-template>
