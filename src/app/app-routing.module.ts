@@ -7,6 +7,10 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./home/home.module').then(mod => mod.HomeModule)
   },
+  {
+    path: 'platform',
+    loadChildren: () => import('./platform/platform.module').then(mod => mod.PlatformModule)
+  }
 ];
 
 @NgModule({

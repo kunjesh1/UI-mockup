@@ -1,0 +1,127 @@
+.site-headers {
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+}
+
+.mainheader {
+  display: flex;
+  align-content: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+.mainheader .logo {
+  width: 250px;
+  height: 70px;
+  margin-left: 5%;
+}
+
+.mainheader nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainheader nav a {
+  text-decoration: none;
+
+  text-transform: uppercase;
+}
+
+a {
+  font-size: medium;
+  padding: 30px;
+}
+
+.nav-button {
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding: 13px;
+
+  text-decoration: none;
+}
+
+.button-login {
+  background: 0 0;
+  border: 1px solid #4169e1;
+  font-weight: 600;
+  margin-right: 5%;
+  color: #3c3fa3;
+}
+
+.button-signup {
+  border: 1px solid #fff;
+  font-weight: 600;
+  background-color: #4169e1;
+  border: 1px solid #4169e1;
+  margin-right: 10%;
+  color: #fff;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .left-sec {
+  margin-left: 5%;
+}
+
+.main .right-sec {
+  padding-right: 70px;
+}
+
+.left-sec h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: lighter;
+  color: #242424;
+}
+
+.left-sec h1 {
+  font-size: 55px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #242424;
+}
+
+.explore-button {
+  border-radius: 5px;
+  width: 10em;
+  text-transform: uppercase;
+  background-color: #4169e1;
+  border: 1px solid #4169e1;
+  color: #fff;
+  font-size: 0.9vw;
+  font-weight: 600;
+  box-shadow: 0 9px 47px 0 rgba(75, 103, 240, 0.31);
+  text-decoration: none;
+  display: block;
+  padding: 3%;
+  text-align: center;
+  margin: 3%;
+}
+
+.api-button {
+  border-radius: 5px;
+  width: 10em;
+  text-transform: uppercase;
+  font-size: 0.9vw;
+  font-weight: 600;
+  box-shadow: 0 9px 47px 0 rgba(75, 103, 240, 0.31);
+  text-decoration: none;
+  display: block;
+  padding: 3%;
+  text-align: center;
+  color: #4169e1;
+  border: 2px solid #4169e1;
+  background: #fff;
+  margin: 3%;
+}
+
+footer {
+  background-color: #4169e1;
+}
