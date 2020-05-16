@@ -1,7 +1,7 @@
-p {
-  font-weight: 500;
+.text {
+  width: 100%;
+  color: #5c6975;
 }
-
 
 $text-color: #373737;
 $gray-base: #494949;
@@ -29,7 +29,7 @@ $brand-danger: #ba1f1f;
     width: 3px;
     background-color: #eeeeee;
     left: 50%;
-    height:322px;
+    height: 322px;
     margin-left: -210.5px;
   }
   .timeline-item {
@@ -118,7 +118,7 @@ $brand-danger: #ba1f1f;
       .timeline-body > p + p {
         margin-top: 5px;
       }
-    }    
+    }
   }
   .timeline-panel-right {
     position: relative;
@@ -132,7 +132,7 @@ $brand-danger: #ba1f1f;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   }
-  .timeline-item{
+  .timeline-item {
     .timeline-panel {
       float: right;
       text-align: left;
@@ -144,8 +144,15 @@ $brand-danger: #ba1f1f;
         right: auto;
       }
     }
-  } 
+  }
 }
+
+.text {
+  text-align: center;
+  width: 100%;
+  color: #5c6975;
+}
+
 // .timeline-horizontal:extend(.timeline) {
 //   list-style: none;
 //   position: relative;
@@ -203,6 +210,6 @@ $brand-danger: #ba1f1f;
 //   }
 // }
 
-span{
+span {
   margin-top: 15px;
 }
