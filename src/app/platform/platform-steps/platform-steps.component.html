@@ -1,30 +1,42 @@
-<h2>Data Done Differently</h2>
+<div style="display: flex;flex-direction: column;">
+    <h2 class="titleh2">Go to Steps
+
+    </h2>
+    <!-- <div class="titleunderline">
+
+    </div> -->
+</div>
+
+<div class="row wrapper">
+    <div class="col-md-4 task-steps">
+        <div *ngFor="let i of [0,1,2,3,4];let i=index" class="task-card-wrapper">
+            <div class="task-card">
+
+                <div class="task-card-type">TASK {{i+1}}</div>
+                <div class="text">
+                    <span class="material-icons">
+                        {{icon[i]}}
+                    </span> &nbsp;<span>{{taskFlow[i]}}
+                    </span> </div>
+
+            </div>
+            <div class="workflows-section-step-arrow-container" *ngIf="i!=4"><svg width="4" height="70"
+                    viewBox="0 0 5 70" fill="yellow" xmlns="http://www.w3.org/2000/svg">
+                    <line class="workflows-step-arrow" opacity="0.5" x1="0" y1="2" x2="2" y2="70" stroke="#3C485E"
+                        stroke-opacity="0.3" stroke-linecap="round" stroke-dasharray="1, 30" stroke-width="4">
+                    </line>
+                </svg></div>
 
 
-<div style="display: flex;">
-<div class="task-steps">
-    <div *ngFor="let i of [1,2,3,4,5];let i=index" class="task-card-wrapper">
-        <div class="task-card">
 
-            <div class="task-card-type">#TASK {{i}}</div>
-            <div>ffdf dfdhfdf dhfdfhdf </div>
-           
         </div>
-        <div class="workflows-section-step-arrow-container" *ngIf=
-        "i!=5"><svg width="4" height="70" viewBox="0 0 5 70"
-            fill="yellow" xmlns="http://www.w3.org/2000/svg">
-            <line class="workflows-step-arrow" opacity="0.5" x1="0" y1="2" x2="2" y2="70" stroke="#3C485E"
-                stroke-opacity="0.3" stroke-width="4"></line>
-        </svg></div>
 
 
 
     </div>
-
-   
-
-</div>
-<div>
-    djsdjs
-</div>
+    <div class="col-md-8">
+        <div class="task-details" *ngFor="let i of taskStep ">
+            {{i}}
+        </div>
+    </div>
 </div>

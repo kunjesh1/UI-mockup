@@ -1,60 +1,68 @@
-h2{
-    color:#1e3147
+@import "../../../assets/css/mini.min.css";
+
+h2 {
+  color: #1e3147 !important;
 }
 
+.material-icons {
+  font-family: "Material Icons" !important;
+  font-size: 15px;
+  margin: 4px 0px 0px 4px;
+}
 
-.task-card{
-    box-sizing: border-box;
-    padding: 24px 20px;
-    border-radius: 5px;
-    border: 1px solid #FFFFFF;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 10px rgba(88,105,125,0.15);
-    display: inline-flex;
-    align-items: center;
-    position: relative;
-  }
-  
-  .task-card-type{
-    position: absolute;
-      left: calc(50% - 45px);
-      top: -12px;
-      width: 90px;
-      border-radius: 22px;
-      height: 24px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: #E1E6ED;
-      color: #3C485E;
-      font-size: 13px;
-      text-transform: uppercase;
-      font-weight: 600;
-  }
-  
-  
-  .task-card-text{
-    font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      font-size: 18px;
-      color: #000000;
-  }
-  
-  .task-card-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.wrapper {
+  background: linear-gradient(white, rgba(6, 179, 242, 0.1));
+  padding: 15px;
+}
 
-  }
-  
+.task-card {
+  box-sizing: border-box;
+  padding: 24px 20px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(88, 105, 125, 0.15);
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
 
-  .task-steps{
-      margin-left:10%;
-      display:flex;
-      flex-direction: column;
-  }
+.task-card-type {
+  position: absolute;
+  left: calc(50% - 45px);
+  top: -12px;
+  width: 90px;
+  border-radius: 22px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #e1e6ed;
+  color: #3c485e;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 
+.task-card-text {
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 18px;
+  color: #000000;
+}
+
+.task-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 20%;
+}
+
+.task-steps {
+  display: flex;
+  flex-direction: column;
+}
 
 //   .line {
 //     position: absolute;
@@ -65,49 +73,103 @@ h2{
 //     animation: move 10s infinite linear;
 // }
 
-
-
 .dotted-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://d5htvn7530ipt.cloudfront.net/netflix/spoilers/8/images/dotted.png);
+  animation: move 10s infinite linear;
+}
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(https://d5htvn7530ipt.cloudfront.net/netflix/spoilers/8/images/dotted.png);
-    animation: move 10s infinite linear;
+.task-details {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin-left: 10%;
+  font-size: 18px;
+  color: #5c6975;
+  margin-bottom: 75px;
+  &:first-child {
+    margin-top: 30px;
+  }
 }
 
 @keyframes move {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 0 100%;
-    }
+  0% {
+    background-position: 0 0;
   }
+  100% {
+    background-position: 0 100%;
+  }
+}
 
-
-  .workflows-section-step-arrow-container {
-    height: 70px;
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.workflows-section-step-arrow-container {
+  height: 70px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .workflows-step-arrow {
-    stroke-dasharray: 10;
-    stroke-dashoffset: 20;
-    animation: arrowStrokeDash 1s linear;
-    animation-iteration-count: infinite;
+  stroke-dasharray: 10;
+  stroke-dashoffset: 20;
+  animation: arrowStrokeDash 1s linear;
+  animation-iteration-count: infinite;
 }
 
+.workflows-section-explanation-step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: #3c485e;
+  color: white;
+  font-weight: bold;
+  line-height: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex: 0 0 30px;
+}
 
 @keyframes arrowStrokeDash {
-    0% {
-      stroke-dashoffset: 30;
-    }
-    100% {
-      stroke-dashoffset: 0;
-    }
+  0% {
+    stroke-dashoffset: 30;
   }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 
+.text {
+  text-align: center;
+  width: 100%;
+  color: #5c6975;
+}
+
+.titleh2 {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #183055;
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 400;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 0px;
+  margin-bottom: 24px solid #183055;
+}
+
+.titleunderline {
+  display: inline-block;
+  width: 80px;
+  height: 3px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 20px;
+  background-color: #3884ff;
+}
