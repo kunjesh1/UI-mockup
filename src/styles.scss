@@ -21,7 +21,6 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -29,6 +28,17 @@ h6 {
   font-weight: 300;
   font-family: "Open Sans ", sans-serif;
 }
+
+
+
+h2{
+  font-size: 49px;
+    line-height: 1.2;
+    letter-spacing: -0.9px;
+    font-weight: 200;
+}
+
+
 
 .material-icons {
   &.big-icon {
