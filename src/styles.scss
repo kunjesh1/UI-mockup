@@ -26,19 +26,15 @@ h4,
 h5,
 h6 {
   font-weight: 300;
-  font-family: "Open Sans ", sans-serif;
+  font-family: "proxima-nova,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif";
 }
 
-
-
-h2{
+h2 {
   font-size: 49px;
-    line-height: 1.2;
-    letter-spacing: -0.9px;
-    font-weight: 200;
+  line-height: 1.2;
+  letter-spacing: -0.9px;
+  font-weight: 200;
 }
-
-
 
 .material-icons {
   &.big-icon {
