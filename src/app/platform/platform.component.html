@@ -1,60 +1,30 @@
-<header class="site-headers">
-
-    <div class="mainheader">
-        <div class="logo">
-         wordsense.AI
-          
-
-            
-        </div>
-        <nav>
-            <a href="@">Home</a>
-            <a href="@">Platform</a>
-            <a href="@">About</a>
-            <a href="@">API</a>
-            <a href="@">Contact</a>
-            <a class="nav-button button-login">LOGIN</a>
-            <a class="nav-button button-signup">Signup</a>
-
-        </nav>
-    </div>
-    <main class="main">
-        <section class="left-sec">
-            <div class="title">Understand the Platform</div>
-            <p style="line-height: 1.9;">
-                wordsense.AI is a B2B company building enterprise products in Voice and Natural Language Understanding
-                Domain.
-            </p>
-            <div class="swiper-home__pagination swiper-pagination-clickable swiper-pagination-bullets">
-                <span class="swiper-pagination-bullet" tabindex="0" role="button"
-                    aria-label="Go to slide 1"></span>
-                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
-                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-                <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
-                    aria-label="Go to slide 4"></span></div>
-            <div style="display: flex;">
-                <button class="explore-button">Getting Started</button>&nbsp;
-                <!-- <button class="api-button">Try it Out</button> -->
-            </div>
-        </section>
-        <section class="right-sec">
-
-            <figure>
-                <img style="width:661px" src="../../assets/images/sscreenshot1.png">
-            </figure>
-
-        </section>
-
-
-
-    </main>
-
-</header>
-
 <section>
-    <app-platform-steps></app-platform-steps>
+    <app-header [scrollPosition]="pageOffset" [index]="3"></app-header>
 </section>
 
-<section>
-    <app-platform-details></app-platform-details>
+<section class="wrapper">
+    <div class="row">
+        <div class="col-md-6 left-sec">
+            <div class="hero-text">
+                Understand the platform
+
+            </div>
+            <br>
+            <div style="width:50%">
+                <div class="nav-button-outline" (click)="scrollToElement(steps)">Explore More</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <br>
+            <img class="placeholder-image" width="500px" src="../../assets/images/bg/Desktop - 1 (7).png">
+        </div>
+    </div>
+
+
+</section>
+
+<br>
+
+<section #steps>
+    <app-platform-steps [pageOffset]="pageOffset"></app-platform-steps>
 </section>

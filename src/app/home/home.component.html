@@ -1,4 +1,4 @@
-<header class="site-headers">
+<!-- <header class="site-headers">
 
     <div class="mainheader">
         <div class="logo">
@@ -8,7 +8,7 @@
             <a href="@">Home</a>
             <a href="@">Platform</a>
             <a href="@">About</a>
-            <a href="@">API</a>
+            <a href="@">Domain</a>
             <a href="@">Contact</a>
             <a class="nav-button button-login">LOGIN</a>
             <a class="nav-button button-signup">Signup</a>
@@ -20,81 +20,132 @@
             <div class="intro-header">Operationalize AI for Enterprise</div>
 
 
-            <ul style="line-height: 1.9;  color:#757575;">
-                    <!-- <li>
+            <ul style="line-height: 1.9;  color:white;">
+                <li>
                         We are building a click only NLU platform as our 1st offering to help enterprises quickly build
                         and
                         deploy customer support solutions including email routing, auto reply, conversational dialog
                         systems,
                         query resolution bot etc.
-                    </li> -->
-                <li>
+                    </li> 
+<li>
 
 
-                    We are also here to help other enterprises use our powerful apis to build applications that
-                    require deep
-                    expertise in Natural Language and Speech.
-                </li>
-            </ul>
+    We are also here to help other enterprises use our powerful apis to build applications that
+    require deep
+    expertise in Natural Language and Speech.
+</li>
+</ul>
 
-            <div class="swiper-home__pagination swiper-pagination-clickable swiper-pagination-bullets">
-                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
-                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
-                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-                <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
-                    aria-label="Go to slide 4"></span></div>
+<div class="swiper-home__pagination swiper-pagination-clickable swiper-pagination-bullets">
+    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+        aria-label="Go to slide 4"></span></div>
 
-                    <br><br>
+<br><br>
 
-            <div style="display: flex;">
-                <button class="explore-button">Explore More</button>&nbsp;
-                <button class="api-button">Try it Out</button>
+<div style="display: flex;">
+    <button class="explore-button">Explore More</button>&nbsp;
+    <button class="api-button">Try it Out</button>
+</div>
+</section>
+<section class="right-sec">
+
+    <figure>
+        <img style="width:550px" src="../../assets/images/bg/rsz_desktop_-_1_1.png">
+    </figure>
+
+</section>
+
+
+
+</main>
+</header> -->
+<div (scroll)="onScroll($event)" #home>
+
+    <app-header [scrollPosition]="pageOffset" [scrollIndex]="" (headerEvent)="scrollToElement(about)" [index]="1">
+    </app-header>
+
+    <div class="wrapper">
+
+        <div class="row">
+            <div class="col-md-6 left-sec">
+                <div class="hero-text">
+
+                    Operationalize Enterprise
+                    AI
+                </div>
+                <br>
+                <p>
+                    Wordsense is an NLP and speech engineering and research company focussed on building Automl
+                    solutions
+                    and custom apis for enterprises.
+
+                </p>
+                <br>
+                <div class="button-wrapper">
+                    <div class="nav-button">Try it Out</div>
+
+                    <div class="nav-button-outline" (click)="scrollToElement(target)">Explore More</div>
+                </div>
             </div>
-        </section>
-        <section class="right-sec">
-
-            <figure>
-                <img style="width:661px" src="../../assets/images/chatabot.png">
-            </figure>
-
-        </section>
+            <div class="col-md-6">
+                <img style="width:550px" src="../../assets/images/bg/rsz_desktop_-_1_1.png">
+                <!-- <img style="width:900px" src="../../assets/images/bg/chat-ticket-2.png"> -->
+            </div>
+        </div>
 
 
-
-    </main>
-</header>
-<section>
-    <app-about></app-about>
-</section>
-<section>
-    <app-how-it-works></app-how-it-works>
-</section>
-
-<section>
-    <app-apis></app-apis>
-</section>
-
-<section>
-    <app-app-integrations></app-app-integrations>
-</section>
-
-<div class="cta-box">
-    <div class="cta-intro">
-        <h3>Are you ready to automate your workflow</h3>
-        <p>Performance? Quality? E-Records? Tell us what you’re working on. Chances are, we can help.</p>
     </div>
-    <a class="btn blue">Request Demo</a>
-    <!-- <div>
+
+    <section #product>
+        <app-apis></app-apis>
+    </section>
+    <br>
+    <br>
+    <section #about>
+        <app-about></app-about>
+    </section>
+    <!-- <section>
+    <app-how-it-works></app-how-it-works>
+</section> -->
+
+
+
+    <section>
+        <app-app-integrations></app-app-integrations>
+    </section>
+
+    <!-- <div class="request-demo-box">
+
+    <div class="request-demo-text">Are you ready to automate your workflow ?</div>
+    <br><br>
+    Join the waitlist now!
+    <br>
+
+    <div class="form-group">
+        <input class="form-field" type="email" placeholder="Email">
+        <span>Request Demo</span>
+    </div>
+
+     <div>
         <button class="api-button">Request Demo</button>
     </div>
 
--->
+
+
+</div> -->
+    <br>
+    <br>
+
+
+
+
+
+    <footer>
+        <app-footer></app-footer>
+    </footer>
 
 </div>
-
-
-
-
-<footer>
-    <app-footer></app-footer>
-</footer>

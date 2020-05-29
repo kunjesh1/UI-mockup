@@ -1,0 +1,132 @@
+<section class="row">
+    <app-header [index]="4"></app-header>
+</section>
+
+<section class="wrapper">
+    <div class="row">
+
+        <div class="col-md-2 left-panel" id="style-1">
+            <div *ngFor="let item of menuItems;let i=index" class="title">
+                {{item.title}}
+                <br>
+                <div *ngFor="let childItem of item.child;let j= index" class="sub-title">
+                    {{childItem.title}}
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-10" style="display: flex;height:calc(100vh - 84px) " id="style-1">
+            <div class="info-panel" id="style-1">
+                <div class="title-info">Auto Email Response and Email Routing
+                </div>
+                <mat-divider></mat-divider>
+                <div class="subtitle-info">Problem
+                </div>
+                <ul>
+                    <li class="text"> For a large volume of emails, manual query resolution to 1st email is a tedius
+                        task.
+                    </li>
+                    <li class="text"> Handling escalation emails is a tedious and manual process as it gets assigned
+                        to
+                        queues
+                    </li>
+                    <li class="text">Identifying Email attributes manually is tricky and complex</li>
+                </ul>
+                <br>
+                <br>
+
+                <div class="subtitle-info">Solution
+                </div>
+                <ul>
+                    <li class="text"> Automated AI-based system that can suggest appropriate responses to the
+                        agents.
+                    </li>
+                    <li class="text"> Automated responses can be integrated with 1 click integration with existing
+                        systems
+                        like
+                        Zendesk or can be independently used as api endpoints.
+                    </li>
+                    <li class="text">Identification of email context, topic, skillset,product department,line of
+                        business
+                        etc
+                        which can be used for email routing to the right agent.</li>
+                </ul>
+                <br>
+                <br>
+                <div class="subtitle-info">Requirements from Client
+                </div>
+                <ul>
+                    <li class="text"> Min.of 1000 email and 1st replies to be uploaded onto the platform for
+                        training
+                        Email
+                        Auto
+                        Response</li>
+                    <li class="text"> Min of 1000 email and their corresponding attributes or department routed to
+                        be
+                        uploaded
+                        for training Email Routing.
+
+                    </li>
+                </ul>
+
+                <br>
+                <br>
+            </div>
+
+
+            <div class="right-panel" id="style-1" *ngIf="tryItOutFlag">
+                <span>
+                    <span class="material-icons" (click)="closeTryItOut()">
+                        close
+                    </span>
+                    <span class="material-icons">
+                        fullscreen
+                    </span>
+                </span>
+
+                <div class="title-info" style="font-size:30px">Try This API</div>
+
+
+                <div style="padding:10px;">Use one of our sample passages below or paste your own.</div>
+
+                <div>
+                    <div class="menu-button" [matMenuTriggerFor]="menu">Toy Story<span class="material-icons">
+                            expand_more
+                        </span></div>
+                </div>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Item 1</button>
+                    <button mat-menu-item>Item 2</button>
+                </mat-menu>
+
+                <textarea id="api-demo-sapien-textarea" id="style-1" placeholder="Paste your text here..."
+                    autocomplete="off" autocorrect="off" autocapitalize="off"
+                    spellcheck="false">Toy Story is a 1995 American computer-animated buddy comedy adventure film produced by Pixar Animation Studios and released by Walt Disney Pictures. The directorial debut of John Lasseter, Toy Story was the first feature-length computer-animated film and the first theatrical film produced by Pixar. The screenplay was written by Joss Whedon, Andrew Stanton, Joel Cohen, and Alec Sokolow, based on a story by Lasseter, Pete Docter, Stanton and Joe Ranft. The film features music by Randy Newman, and was executive produced by Steve Jobs and Edwin Catmull.</textarea>
+
+                <div>
+                    <div class="execute-button">
+                        EXECUTE<span class="material-icons" style="color:#033d83">
+                            play_circle_outline
+                        </span>
+                    </div>
+                </div>
+
+                <textarea id="api-demo-sapien-textarea" id="style-1" placeholder="Paste your text here..."
+                    autocomplete="off" autocorrect="off" autocapitalize="off"
+                    spellcheck="false">Toy Story is a 1995 American computer-animated buddy comedy adventure film produced by Pixar Animation Studios and released by Walt Disney Pictures. The directorial debut of John Lasseter, Toy Story was the first feature-length computer-animated film and the first theatrical film produced by Pixar. The screenplay was written by Joss Whedon, Andrew Stanton, Joel Cohen, and Alec Sokolow, based on a story by Lasseter, Pete Docter, Stanton and Joe Ranft. The film features music by Randy Newman, and was executive produced by Steve Jobs and Edwin Catmull.</textarea>
+                dsdsd
+                sd sdjsdjsd sd
+                sdsd
+
+                sdjsdjsdsdjsd
+                sdhsdsd
+                sdhsdhsd
+                <div>
+                    sdjsdjsd
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

@@ -1,205 +1,42 @@
-.site-headers {
+@import "../../assets/css/mini.min.css";
+.wrapper {
   width: 100%;
   height: 100vh;
+  background-image: url("../../assets/images/bg/platform-background-removebg-preview.png");
+  // background: linear-gradient(185.09deg, #0c4185 24.03%, #052f67 96.77%);
+
+  background-repeat: no-repeat;
   background-size: 100% 100%;
-
-  background: linear-gradient(185.09deg, #0c4185 24.03%, #052f67 96.77%);
-  margin-bottom: 0 !important;
-}
-
-h2 {
   color: white;
-}
-p {
-  color: white;
-}
-.mainheader {
-  display: flex;
-  align-content: flex-end;
-  justify-content: space-between;
-  width: 100%;
-}
-
-  .mainheader .logo {
-
-    margin-top: 2%;
-    margin-left: 2%;
-    font-size:25px;
-    color:white;
-  
-  }
-
-.mainheader nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.mainheader nav a {
-  text-decoration: none;
-
-  text-transform: uppercase;
-}
-
-a {
-  font-size: medium;
-  padding: 30px;
-  color: white;
-}
-
-.nav-button {
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  padding: 13px;
-
-  text-decoration: none;
-}
-
-.button-login {
-  background: 0 0;
-  border: 1px solid #4169e1;
-  font-weight: 600;
-  margin-right: 5%;
-  color: #fff;
-}
-
-.button-signup {
-  border: 1px solid #fff;
-  font-weight: 500;
-  background-color: white;
-  border: 1px solid #4169e1;
-  margin-right: 10%;
-  color: #4169e1;
-}
-
-.main {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main .left-sec {
-  margin-left: 5%;
-}
-
-.main .right-sec {
-  padding-right: 70px;
-}
-
-.left-sec h2 {
-  font-size: 20px;
-  text-transform: capitalize;
-  font-weight: lighter;
-  color: white;
-}
-
-.left-sec h1 {
-  font-size: 55px;
-  text-transform: capitalize;
-  font-weight: 700;
-  color: white;
-}
-
-.explore-button {
-  border-radius: 5px;
-  width: 10em;
-  text-transform: uppercase;
-  background-color: #4169e1;
-  border: 1px solid #4169e1;
-  color: #fff;
-  font-size: 0.9vw;
-  font-weight: 600;
-  box-shadow: 0 9px 47px 0 rgba(75, 103, 240, 0.31);
-  text-decoration: none;
-  display: block;
-  padding: 3%;
-  text-align: center;
-  margin: 3%;
-}
-
-.api-button {
-  border-radius: 5px;
-  width: 10em;
-  text-transform: uppercase;
-  font-size: 0.9vw;
-  font-weight: 600;
-  box-shadow: 0 9px 47px 0 rgba(75, 103, 240, 0.31);
-  text-decoration: none;
-  display: block;
-  padding: 3%;
-  text-align: center;
-  color: #4169e1;
-  border: 2px solid #4169e1;
-  background: #fff;
-  margin: 3%;
-}
-
-footer {
-  background-color: #4169e1;
-}
-
-.title{
-  font-size:32px;
-  font-weight:500;
-  color:white
-}
-
-
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 10px;
-  left: 0;
-  width: 100%;
-}
-
-.swiper-home__pagination {
-  margin-top: 25px;
-}
-
-.swiper-home__pagination .swiper-pagination-bullet:first-child {
-  margin-left: 0;
-}
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 4px;
-}
-.swiper-home__pagination .swiper-pagination-bullet {
+  top: 84px;
   position: relative;
-  padding: 0;
-  width: 32px;
-  height: 2px;
-  background-color: #fff;
-  margin-left: 4px;
-  margin-right: 4px;
-  cursor: pointer;
-  -webkit-transition: background-color .3s;
-  transition: background-color .3s;
-  border: 0;
-  border-radius: 0;
-  opacity: .3;
 }
 
+.hero-text {
+  font-family: "Poppins" sans-serif !important;
+  font-weight: 500;
+  font-size: 40px;
+}
 
-.swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+.left-sec {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.placeholder-image {
+  box-shadow: inset 0 4px 7px 1px #ffffff, inset 0 -5px 20px rgba(173, 186, 204, 0.25), 0 2px 6px rgba(0, 21, 64, 0.14),
+    0 10px 20px rgba(0, 21, 64, 0.05);
+}
+
+.nav-button-outline {
+  border-radius: 10rem;
+  text-decoration: none;
   display: inline-block;
-  border-radius: 100%;
-  background: #000;
-  opacity: .2;
-}
-
-.swiper-home__pagination .swiper-pagination-bullet:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 32px;
-  position: absolute;
-  top: -14px;
-  left: 0;
-}
-
-.swiper-home__pagination .swiper-pagination-bullet-active {
-  background-color: #fff;
-  opacity: 1;
+  background-color: #033d83;
+  padding: 0.8rem 1.2rem 0.8rem;
+  margin-right: 15px;
+  color: white;
+  border: 1px solid white;
 }

@@ -1,0 +1,40 @@
+@import "../../assets/css/mini.min.css";
+
+.wrapper {
+  height: 100vh;
+
+  // background: linear-gradient(185.09deg, #0c4185 24.03%, #052f67 96.77%);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  top: 84px;
+  padding: 20px;
+  position: relative;
+}
+
+.title-wrapper {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+  height: 100vh;
+}
+.text {
+  margin: 10px;
+  font-size: 19px;
+  line-height: 1.5em;
+}
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title-center {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.text-container {
+  margin-bottom: 80px;
+}
