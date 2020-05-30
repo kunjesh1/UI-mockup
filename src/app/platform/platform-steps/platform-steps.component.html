@@ -20,12 +20,12 @@
         <div class="col-md-6 ">
             <div [ngClass]="{'sticky-div':pageOffset>400&& pageOffset < 1500}">
                 <div class="titleh2">Go to Steps</div>
-                <div class="text-wrapper">
-                    <div *ngFor="let item of taskStep;let i=index">
-                        <div class="text">
-                            <b> {{i+1}}</b> . <div
-                                [ngClass]="{'bold-text':i==boldTextIndex[boldTextIndex.length-1].index}">
-                                {{item}}</div>
+                <div class="text-wrapper" >
+                    <div class="text" *ngFor="let item of taskStep;let i=index" [ngClass]="{'bold-text':i==boldTextIndex[boldTextIndex.length-1].index}">
+                        <div   >
+                            <b> {{i+1}}</b> . 
+                               
+                                {{item}}
                         </div>
                     </div>
                 </div>

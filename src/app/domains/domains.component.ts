@@ -77,7 +77,7 @@ export class DomainsComponent implements OnInit {
   }
 
   closeTryItOut() {
-    this.tryItOutFlag = false;
+    this.tryItOutFlag = !this.tryItOutFlag;
   }
 
 

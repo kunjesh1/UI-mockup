@@ -153,6 +153,8 @@ svg {
   text-align: center;
   width: 100%;
   color: #5c6975;
+  padding:10px;
+  margin:20px;
 }
 
 .flow-chart {
@@ -214,8 +216,8 @@ svg {
   width: 70%;
 }
 .text {
-  padding: 20px;
-  padding-left: 0px;
+
+
   text-align: left;
 }
 
@@ -233,4 +235,9 @@ svg {
 
 .bold-text {
   font-weight: 500;
+  border-left:2px solid #033d83;
+  margin:10px;
+  border-top:1px solid #5c6975;
+  border-bottom:1px solid #5c6975;
+  border-right:1px solid #5c6975;
 }

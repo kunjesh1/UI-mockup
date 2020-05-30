@@ -9,16 +9,21 @@
             <div *ngFor="let item of menuItems;let i=index" class="title">
                 {{item.title}}
                 <br>
-                <div *ngFor="let childItem of item.child;let j= index" class="sub-title">
+                <div  *ngFor="let childItem of item.child;let j= index" class="sub-title"  [ngClass]="{'active':j===0 && i==0   }">
                     {{childItem.title}}
                 </div>
-
+                
             </div>
         </div>
         <div class="col-md-10" style="display: flex;height:calc(100vh - 84px) " id="style-1">
             <div class="info-panel" id="style-1">
+                <div style="display:flex;justify-content: space-between;">
                 <div class="title-info">Auto Email Response and Email Routing
                 </div>
+                <div class="try-it-out" *ngIf="!tryItOutFlag" (click)="closeTryItOut()">
+                    Try It
+                </div>
+            </div>
                 <mat-divider></mat-divider>
                 <div class="subtitle-info">Problem
                 </div>
@@ -90,7 +95,7 @@
                 <div style="padding:10px;">Use one of our sample passages below or paste your own.</div>
 
                 <div>
-                    <div class="menu-button" [matMenuTriggerFor]="menu">Toy Story<span class="material-icons">
+                    <div class="menu-button" [matMenuTriggerFor]="menu" style="display: flex;  padding:2px;"><span style=" margin-top:2px;">Toy Story</span><span class="material-icons">
                             expand_more
                         </span></div>
                 </div>
@@ -104,7 +109,7 @@
                     spellcheck="false">Toy Story is a 1995 American computer-animated buddy comedy adventure film produced by Pixar Animation Studios and released by Walt Disney Pictures. The directorial debut of John Lasseter, Toy Story was the first feature-length computer-animated film and the first theatrical film produced by Pixar. The screenplay was written by Joss Whedon, Andrew Stanton, Joel Cohen, and Alec Sokolow, based on a story by Lasseter, Pete Docter, Stanton and Joe Ranft. The film features music by Randy Newman, and was executive produced by Steve Jobs and Edwin Catmull.</textarea>
 
                 <div>
-                    <div class="execute-button">
+                    <div class="execute-button" style="display: flex;  padding:7px;">
                         EXECUTE<span class="material-icons" style="color:#033d83">
                             play_circle_outline
                         </span>

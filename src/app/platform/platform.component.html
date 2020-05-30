@@ -28,3 +28,21 @@
 <section #steps>
     <app-platform-steps [pageOffset]="pageOffset"></app-platform-steps>
 </section>
+
+<br>
+
+<div class="row">
+    <div class="col-md-7 go-to-platform" >
+       <div class="get-started"> Ready to get started?</div>
+        <div class="create-account">Go to Platform or Create an account</div>
+    </div>
+    <div class="col-md-5 button-wrapper">
+        <div class="nav-button">Sign Up</div>
+
+        <div class="nav-button-outline" (click)="scrollToElement(target)">Go to Platform</div>
+    </div>
+
+</div>
+<section >
+    <app-footer ></app-footer>
+</section>

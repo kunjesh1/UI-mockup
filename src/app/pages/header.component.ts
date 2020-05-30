@@ -73,9 +73,9 @@ export class HeaderComponent implements OnChanges {
 
 
     console.log(this.stateService.menuIndex.value);
-
-    this.router.navigate(['home']);
     this.stateService.setIndex(5);
+    this.router.navigate(['about']);
+   
 
   }
   navigateToPlatform() {
@@ -87,6 +87,7 @@ export class HeaderComponent implements OnChanges {
 
 
   navigateToAPIs() {
+    this.stateService.setIndex(4);
     sessionStorage.setItem('index', '4');
     this.router.navigate(['domain']);
   }

@@ -3,7 +3,7 @@
 .material-icons {
   font-family: "Material Icons" !important;
   font-size: 15px;
-  margin: 4px 0px 0px 4px;
+  padding: 4px 0px 0px 4px;
 }
 
 .left-panel {
@@ -23,6 +23,7 @@
   font-weight: 500;
   margin-bottom: 20px;
   padding-bottom: 10px;
+
 }
 
 .sub-title {
@@ -63,7 +64,8 @@
 .material-icons {
   font-family: "Material Icons" !important;
   font-size: 20px;
-  margin: 2px 0px 0px 4px;
+  margin: -8px 0px 0px 5px;
+
 }
 
 .options {
@@ -81,7 +83,15 @@
 }
 
 .sub-title {
-  padding: 2px;
+  padding-left:7px;
+  padding: 5px;
+  &.active {
+    border-left: 1px solid white;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    // background-color: #1f84e9;
+    color: white;
+  }
 }
 
 .titleh2 {
@@ -120,11 +130,11 @@
 }
 
 .text {
-  color: #565656;
+  color: #5c6975;
 }
 
 .text-wrapper {
-  color: #565656;
+  color: #5c6975;
   padding: 10px;
 }
 
@@ -224,7 +234,7 @@ textarea {
   color: #033d83;
   border: 1px solid #033d83;
   margin: 20px;
-  width: 30%;
+  width: 22%;
   padding-left: 10px;
   border-radius: 5px;
 }
@@ -237,4 +247,20 @@ textarea {
   background-repeat: no-repeat;
   top: 84px;
   position: relative;
+}
+
+
+.try-it-out{
+  outline: none;
+  text-align: center;
+  color: #ffffff;
+  background:  #033d83;
+  vertical-align: center;
+  width: 10%;
+  padding: 5px;
+  margin:10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+  border-radius: 5px;
 }

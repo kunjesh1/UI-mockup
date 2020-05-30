@@ -1,17 +1,37 @@
 import { Component, OnInit, Inject, AfterViewChecked, HostListener, Input, OnChanges, ViewChild, TemplateRef, AfterViewInit, ElementRef } from '@angular/core';
 import { StateService } from '../services/state.service';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { trigger, transition, animate, style ,state} from '@angular/animations'
 
 
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  animations: [
+    // the fade-in/fade-out animation.
+    trigger('simpleFadeAnimation', [
+
+      // the "in" style determines the "resting" state of the element when it is visible.
+      state('in', style({opacity: 1})),
+
+      // fade in when created. this could also be written as transition('void => *')
+      transition(':enter', [
+        style({opacity: 0}),
+        animate(600 )
+      ]),
+
+      // fade out when destroyed. this could also be written as transition('void => *')
+      transition(':leave',
+        animate(600, style({opacity: 0})))
+    ])
+  ]
 })
 export class HomeComponent implements OnChanges, OnInit {
 
   pageOffset = 0;
+  slideIndex =1;
   imageUrlArray = ['https://picsum.photos/id/237/200/300', 'https://picsum.photos/id/237/200/300'];
 
   @ViewChild('about', { static: false }) public about: ElementRef<any>;
@@ -22,21 +42,31 @@ export class HomeComponent implements OnChanges, OnInit {
     setTimeout(function () { this.scrollToElement(element); alert("After 5 seconds!"); }, 5000);
   }
   ngOnInit() {
-
+    setTimeout(()=>{ this.slideIndex=2
+    ;
+  this.ngOnInit(); }, 2000);
   }
   subIndex: Observable<any> = this.stateService.getIndex();
   menuIndex = 1;
 
 
+  goToSlide(value)
+  {
+    this.slideIndex = value;
+  }
 
+
+ 
+    
+  
   ngOnChanges() {
 
     // this.stateService.menuIndex.subscribe(value => {
     //   this.menuIndex = value;
     //   this.subIndex = value;
     //   console.log("sdsd", value);
-
-
+   
+   
 
   }
 

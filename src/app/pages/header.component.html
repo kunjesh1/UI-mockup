@@ -1,15 +1,28 @@
 <div class="mainheader" [ngClass]="{'shadow':scrollPosition>0 || index==4}">
     <div class="logo">
-        EfficientLearner AI
+        CuriousLearner AI
     </div>
     <div class="header">
-        <a [ngClass]="{'active': stateService.menuIndex.value ==1 &&  scrollPosition>=0&& scrollPosition<400}"
-            (click)="navigateToHome()">Home</a>
-        <a [ngClass]="{'active':stateService.menuIndex.value ==2}">Product</a>
-        <a [ngClass]="{'active':stateService.menuIndex.value ==3}" (click)="navigateToPlatform()">Platform</a>
 
-        <a [ngClass]="{'active':stateService.menuIndex.value ==4}" (click)="navigateToAPIs()">APIs</a>
-        <a [ngClass]=" {'active': stateService.menuIndex.value==5|| scrollPosition>800&& scrollPosition<1500}"
+        <a [ngClass]="{'active': index ==1 }" class="pointer" (click)="navigateToHome()">Home</a>
+        <a [ngClass]="{'active':stateService.menuIndex.value ==2}" class="pointer">Product</a>
+        <a [ngClass]="{'active':stateService.menuIndex.value ==3}" class="pointer"
+            (click)="navigateToPlatform()">Platform</a>
+
+
+        <div class="dropdown">
+            <a [ngClass]="{'active':index ==4}" class="pointer"
+                (click)="navigateToAPIs()">APIs</a>
+            <div class="dropdown-content">
+                <a routerLink="'/domain'">Customer Support</a>
+                <a  routerLink="'/domain'">
+                    Healthcare</a>
+                <a  routerLink="'/domain'">Education</a>
+                <a  routerLink="'/domain'">Media</a>
+                <a  routerLink="'/domain'"x>Miscellaneous</a>
+            </div>
+        </div>
+        <a [ngClass]=" {'active': stateService.menuIndex.value==5}" class="pointer"
             (click)="navigateToAbout()">About</a>
 
 

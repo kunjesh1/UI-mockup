@@ -86,17 +86,26 @@
                 </p>
                 <br>
                 <div class="button-wrapper">
-                    <div class="nav-button">Try it Out</div>
+                    <div class="nav-button" [routerLink]="'/domain'">Try it Out</div>
 
-                    <div class="nav-button-outline" (click)="scrollToElement(target)">Explore More</div>
+                    <div class="nav-button-outline" (click)="scrollToElement(product)">Explore More</div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img style="width:550px" src="../../assets/images/bg/rsz_desktop_-_1_1.png">
+            <div class="col-md-6 image-container" style="background-color: #033d83;" >
+                 <img  *ngIf="slideIndex ===1" style="width:500px" src="../../assets/images/bg/rsz_desktop_-_1_1.png"> 
+
+                <div [@simpleFadeAnimation]="'in'" *ngIf="slideIndex ===2" style="position: relative; left: 0; top: 0;">
+                    <img src="../../assets/images/bg/Desktop - 1 (7).png" class="mockup-screen-main"/>
+                     <img width="350px" src="../../assets/images/upload_dataset.png" class="mockup-subscreen-1"/> 
+                     <img width="350px" src="../../assets/images/model_mockup.png" class="mockup-subscreen-2"/> 
+                  </div>
                 <!-- <img style="width:900px" src="../../assets/images/bg/chat-ticket-2.png"> -->
             </div>
         </div>
-
+        <div class="swiper-home__pagination swiper-pagination-clickable swiper-pagination-bullets">
+            <span class="swiper-pagination-bullet" [ngClass]= "{'swiper-pagination-bullet-active':slideIndex ===1 }" tabindex="0" role="button" aria-label="Go to slide 1" (click)="goToSlide(1)"></span>
+            <span class="swiper-pagination-bullet " [ngClass]= "{'swiper-pagination-bullet-active':slideIndex ===2 }"  tabindex="0" role="button"
+                aria-label="Go to slide 2" (click)="goToSlide(1)"></span></div>
 
     </div>
 
